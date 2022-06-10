@@ -39,7 +39,7 @@ const App = () =>{
 	}
 
 	const addTaskHandler = (data) =>{
-		setTasks(prev => [...prev, data]);
+		setTasks(prev => [data, ...prev]);
 	}
 
 	const deleteTaskHandler = (id) =>{
