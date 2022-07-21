@@ -12,8 +12,9 @@ const Task = ({data, deleteTask, editTask, checkTask}) =>{
         <input type='checkbox' onChange={()=>checkTask(data.id)} checked={data.done}/>
         <input 
         type='text' className="task" placeholder='Task' value={title}
-        onDoubleClick={()=>deleteTask(data.id)} onChange={editHandler}
+         onChange={editHandler}
      />
+        <i className="fa fa-trash" onClick={()=>deleteTask(data.id)} aria-hidden="true"></i>
     </div>
 }
 

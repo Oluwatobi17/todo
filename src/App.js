@@ -17,6 +17,7 @@ const App = () =>{
 
 	useEffect(()=>{
 		let store = JSON.parse(localStorage.getItem('storedTasks'));
+		console.log(store);
 		if(store) setTasks(store);
 	}, []);
 

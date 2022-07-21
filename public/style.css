@@ -90,6 +90,10 @@ p > a{
     text-decoration: none;
     color: #3394e9;
 }
+.fa-trash{
+    cursor: pointer;
+    color: red;
+}
 
 @media screen and (max-width: 500px) {
     .todo-container{
